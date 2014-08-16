@@ -11,8 +11,14 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = qt_examp_001_subwindow
 TEMPLATE = app
 
+#------------------------------------------------------------
+# Compiler settings
+
+QMAKE_CXXFLAGS += -std=c++11
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    mywidget.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    mywidget.h
