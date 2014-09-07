@@ -1,6 +1,9 @@
 // C++ standard includes
 #include <iostream>
 
+// Qt includes
+#include <QEvent>
+
 // App includes
 #include "mywidget.h"
 
@@ -20,7 +23,6 @@ mywidget::~mywidget()
 {
 
 }
-#include <QEvent>
 
 void mywidget::changeEvent( QEvent * event )
 {
